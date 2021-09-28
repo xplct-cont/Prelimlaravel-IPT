@@ -8,11 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Trainor extends Model
 {
     public function user(){
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\Models\User');
     }
 
     public function courses(){
-        return $this->hasMany('App\Courses');
+        return $this->hasMany('App\Models\Courses');
     }
    
    

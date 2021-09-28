@@ -43,10 +43,10 @@ class User extends Authenticatable
     ];
 
     public function trainors(){
-        return $this->hasMany('App\Trainor');
+        return $this->hasMany('App\Models\Trainor');
     }
 
     public function trainees(){
-        return $this->hasMany('App\Trainee');
+        return $this->hasMany('App\Models\Trainee');
     }
 }
